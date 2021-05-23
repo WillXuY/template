@@ -5,7 +5,8 @@ build/
 !**/src/test/**/build/
 
 ### password
-src/main/resources
+!src/main/resources/template.yml
+src/main/resources/application.yml
 
 ### STS ###
 .apt_generated
