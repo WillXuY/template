@@ -1,8 +1,8 @@
 package com.willxu.template.build;
 
-import com.willxu.algorithm.domain.AllOne;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.willxu.algorithm.domain.AllOne;
 
 @SpringBootTest
 public class GradleIncludeOtherProjectTest {
