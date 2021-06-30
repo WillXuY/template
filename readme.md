@@ -1,56 +1,40 @@
-# What's this?
+# I - What's this?
 
-This project is a demo project for developing with spring boot and gradle.
-For learning spring framework gradle and so on.
+This project is a demo microservice project for developing with spring boot, gradle and so on.
+Take some notes for programing skill, tools using guide and so on.
+
+# II - Navigation 
+
+## i. Include Another Flat Project: [algorithm](https://github.com/WillXuY/algorithm)
+
+## ii. [Programing Notes](static/notes/notes.md) mark solutions meet in programing.
+
+## iii. [Tools Using Guide](static/guide/guide.md) notes how to build project, use tools and so on. 
+
+## iv. [Tools Using Example](src/test/java/org/willxu/template/tools/package-info.java)
+
+# III - Full Technology Stack
 
 - language
-  - java
-  - groovy
+  - java(main language)
+  - markdown(take notes)
+  - groovy(build tool language)
   
 - build tool
-  - gradle
+  - gradle(deal with the dependencies)
   
 - framework
-  - spring boot 
-  - mybatis
+  - spring boot(main framework)
+  - spring cloud(microservice)
+  - mybatis(databases)
   
 - databases
-  - mysql
+  - mysql(main databases)
   
 - nosql
-  - redis
+  - redis(cache)
   
 - tools
-  - lombok
+  - lombok(create the POJO)
+  - jackson(deal with the json)
   
-- include
-  - [algorithm](https://github.com/WillXuY/algorithm)
-
-# Notes
-
-Mark some problem I meet when I ogram.
-
-## multi slf4j when run the [Test](src/test/java/com/willxu/template/build/GradleIncludeOtherProjectTest.java)
-
-### cause
-
-ch.qos.logback logback-classic implements the slf 4j
-
-### solution
-
-build.gradle exclude the logback dependency [configurations.all](build.gradle)
-
-## include other flat project [algorithm](https://github.com/WillXuY/algorithm)
-
-### solution
-
-1. settings.gradle add [includeFlat](settings.gradle)
-2. build.gradle add [implementation project](build.gradle)
-
-### note
-
-gradle 7 change grammar: implementation extend with compile.
-
-## redis connection tools
-
-- [AnotherRedisDesktopManager](https://github.com/qishibo/AnotherRedisDesktopManager)
